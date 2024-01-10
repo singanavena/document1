@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms elements</title>
+</head>
+<body>
+ <h2>form element</h2>   
+ <form action="main.py" method="post">
+    <label for="name"> name*:</label>
+    <input type="text" id="name" name="name" placeholder="enter your name" required ><br><br>
+    <label for="em" >email:</label>
+    <input type="email" id="em" name="email" placeholder="enter your email"><br><br>
+    <label for="pass">password:</label>
+    <input type="password" id="pass" name="password" placeholder="enter your password"><br><br>
+    <label for="phno">phone number</label>
+    <input type="number" name="number" id="phno" placeholder="6281006635" readonly><br><br>
+    <label for="dob">dob</label>
+    <input type="date" name="dob" id="dob"><br><br>
+    <label for="sign">signature</label>
+    <input type="file" name="signature" id="sign"><br><br>
+    <input type="color" name="" id="">
+    <input type="datetime-local" name="" id="">
+    <input type="url" name="" id=""><br><br>
+    <fieldset>
+        <legend>gender:</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">other</label>
+    </fieldset>
+    enter gender:
+    <input type="radio" name="gender" id="male">
+    <label for="male">male</label>
+    <input type="radio" name="gender" id="female">
+    <label for="female">female</label><br><br>
+    <input type="week"><br>
+    <fieldset>
+        <legend>interests</legend>
+        <input type="checkbox" id="coding" name="interests[]" value="coding">
+        <label for="coding">coding</label>
+        <input type="checkbox" id="gaming" name="interests[]" value="gaming">
+        <label for="gaming">gaming</label>
+        <input type="checkbox" id="reading" name="interests[]" value="reading">
+        <label for="reading">reading</label>
+    </fieldset>
+    <label for="country">country:</label>
+    <select id="country" name="country">
+        <option value="usa">united states</option>
+        <option value="uk">united kingdom</option>
+        <option value="canada">canada</option>
+    </select><br><br>
+    <label for="comments">comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="enter your comments"></textarea>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+ </form>
+</body>
+</html>

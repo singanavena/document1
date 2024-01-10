@@ -1,0 +1,14 @@
+.transition-box{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+p{
+    font-weight: bold;
+}
+.transition-box:hover{
+    background-color: lightcoral;
+}

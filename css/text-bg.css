@@ -1,0 +1,25 @@
+body{
+    background-color:#fc8803 ;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+.red-text{
+    color: red;
+    background-color: blueviolet;
+}
+.centered-text{
+    text-align: center;
+    background-color: lightgrey;
+}
+.blue-background{
+    background-color: blue;
+    color: white;
+}
+.bg-image{
+    text-align: center;
+    background-image:url('./nn6emufo_ms-dhoni-ipl_650x400_07_October_21.webp');
+}

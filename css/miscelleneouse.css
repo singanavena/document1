@@ -1,0 +1,63 @@
+:root{
+    --primary-color:#007bff;
+}
+.custom-properties-box{
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    line-height: 200px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 20px;
+}
+.grid-item{
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item{
+    width: 30%;
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width:768px){
+    .flex-item{
+        width: 100%;
+    }
+}
+.transition-box{
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}.animation-box{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slide {
+    0%{transform: translateX(0);}
+   50% {
+transform: translateX(150px);
+background-color: lightcoral;
+    }
+    100%{
+        background-color: lightblue;
+    }
+}

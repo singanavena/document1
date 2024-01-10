@@ -1,0 +1,22 @@
+.float-left{
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin-right: 100px;
+}
+.float-right{
+    float: right;
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    margin-right: 100px;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+p{
+    font-weight: bold;
+}

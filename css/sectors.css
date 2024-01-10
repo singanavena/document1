@@ -1,0 +1,29 @@
+p{
+    color:blue;
+}
+.highlight{
+    background-color: yellow;
+}
+#unique{
+    font-weight: bold;
+    background-color: blueviolet;
+}
+p em{
+    font-style: italic;
+    background-color: gray;
+}
+div>span{
+    font-size: 100px;
+}
+h1{
+    color: red;
+    background-color:#a8329b ;
+}
+h2{
+    color: red;
+}
+a[target="-blank"]
+{
+    text-decoration: none;
+    background-color: #42a832;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes</title>
+    <style>
+        a:hover{
+            color: red;
+        }
+        button:active{
+            background-color: green;
+        }
+        input:focus{
+            border: 20px solid blue;
+        } 
+        li:nth-child(even){
+            background-color: lightgrey;
+        }
+        li:nth-child(odd){
+            background-color: lightblue;
+        }
+        p:not(.special){
+            font-weight: bold;
+        }
+        p::before{
+            content: "paramesh:";
+            color: green;
+        }
+        p::after{
+            content: "yadav";
+            color:blue;
+        }
+        .first-line::first-line{
+            text-transform: uppercase;
+        }
+        .first-letter::first-letter{
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+ <h1>pseudo-classes and pseudo-selectors</h1>  
+ <p>this is a <a href="#">link</a></p> 
+ <button>click me</button>
+ <input type="text" placeholder="input field">
+ <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+ </ul>
+ <p class="special">this is a special paragraph.</p>
+ <p>      this is normal paragraph</p>
+ <p>this is another normal paragraph.</p>
+ <p class="first-line">this is the first line of text</p>
+ <p class="first-letter">this is a paragraph  with a large initial letter.</p>
+</body>
+</html>

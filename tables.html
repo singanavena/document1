@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html table features</title>
+</head>
+<body>
+    <h2>simple table</h2>
+    <table border="1">
+        <tr>
+            <th>header1</th>
+            <th>header2</th>
+            <th>header3</th>
+        </tr>
+        <tr>
+        <td>row1,cell1</td>
+        <td>row1,cell2</td>
+        <td>row1,cell3</td>
+        </tr>
+        <tr>
+            <td>row2,cell1</td>
+            <td>row2,cell2</td>
+            <td>row2,cell3</td>
+        </tr>
+    </table>
+    <h2>table caption and column header</h2>
+    <table border="1">
+        <caption>this is a table caption</caption>
+        <thead>
+            <tr>
+                <th scope="col">column1</th>
+                <th scope="col">column2</th>
+                <th scope="col">column3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>row1,cell1</td>
+                <td>row1,cell2</td>
+                <td>row1,cell3</td>
+            </tr>
+            <tr>
+                <td>row2,cell1</td>
+                <td>row2,cell2</td>
+                <td>row2,cell3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">total:2rows</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>merged cells</h2>
+    <table border="1">
+        <tr>
+            <th rowspan="2">header1</th>
+            <th>header2</th>
+            <th>header3</th>
+        </tr>
+        <tr>
+            <td>row1,cell2</td>
+            <td>row1,cell3</td>
+        </tr>
+        <tr>
+            <td>row2,cell1</td>
+            <td>row2,cell2</td>
+            <td>row2,cell3</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 20px;
+}
+.flex-item{
+    flex: 1;
+    background-color: lightgreen;
+    padding: 10px;
+}
+p{
+    font-weight: bold;
+}

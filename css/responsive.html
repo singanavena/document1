@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive web design</title>
+    <style>
+        body{
+            font-family: arial,sans-ser;
+            margin:200px;
+            padding: 20px;
+            background-color: blue;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        @media(max-width:768px){
+            .container{
+                padding: 30px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+        @media(max-width:480px){
+            .container{
+                padding: 5px;
+            }
+            h1{
+                font-size: 20px;
+        }
+         p{
+            font-size: 14px;
+         }
+        }
+        h1{
+            font-size: 36px;
+            color: #333;
+        }
+        p{
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <h1>responsive web design</h1>
+    <p>responsive web design (rwd) is an approach to web design that makes web pages render well on a variety of devices and window 
+        of screen sizes
+    </p>
+ </div>   
+</body>
+</html>
